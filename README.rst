@@ -35,6 +35,32 @@ and the Objects API (EUPL) are open source and therefore free to use.
 .. _`Common Ground`: https://www.commonground.nl/
 
 
+How to use
+==========
+
+There are 4 folders in this repository:
+
+* `community-concepts` - Contains all objecttypes that are created by the 
+  community. They are typically not used by many public organizations, can 
+  change without notice but submitted here to benefit and provide inspiration 
+  to others. If multiple public organizations use an objecttype, it can be 
+  "upgraded" to a community standard (see below).
+* `community-standards` - Contains objecttypes that a group of public 
+  organizations agreed upon. The objecttype is considered to be a 
+  *community standard* and cannot be changed. Only newer versions can be 
+  submitted as *community concept*.
+* `official-concepts` - Contains objecttypes that are considered to become an 
+  official standard but are not yet there. If, after a certain period, there
+  are no objections to this objecttype, it can be "upgraded" to an 
+  *official standard*.
+* `official-standards` - Contains objecttypes that are recommended for all 
+  organizations to use. These objecttypes will typically not see newer versions
+  anytime soon and can most likely be used for a long period of time.
+
+These folders contain JSON schemas. They can be loaded into your own Objecttypes
+API with appropriate meta data.
+
+
 References
 ==========
 

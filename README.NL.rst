@@ -37,6 +37,34 @@ gebruiken.
 .. _`Common Ground`: https://www.commonground.nl/
 
 
+Hoe te gebruiken
+================
+
+Er zijn 4 mappen in deze repository:
+
+* `community-concepts` - Bevat alle objecttypen die zijn gemaakt door de
+  community. Ze worden doorgaans niet gebruikt door veel publieke organisaties, 
+  kunnen wijzigen zonder kennisgeving, maar zijn hier ingediend zodat anderen er
+  gebruik van kunnen maken. Als meerdere publieke organisaties een objecttype 
+  gebruiken, kan deze "opgewaardeerd" worden naar een community standaard (zie 
+  hieronder).
+* `community-standards` - Bevat objecttypen waar een groep van publieke 
+  organisaties overeenstemming over heeft bereikt. Het objecttype wordt 
+  beschouwd als een *community standaard* en kan niet worden gewijzigd. Alleen 
+  nieuwe versies kunnen ingediend worden als *community concept*.
+* `official-concepts` - Bevat objecttypen waarvan verwacht wordt dat deze een
+  officiële standaard worden maar dat nog niet zijn. Als, na een bepaalde 
+  periode, er geen bezwaren zijn tegen dit objecttype, kan het "opgewaardeerd" 
+  worden naar een *officiële standaard*.
+* `official-standards` - Bevat objecttypen die worden aanbevolen voor alle 
+  organisaties om te gebruiken. Deze objecttypen zullen normaal gesproken niet
+  snel opgevolgd worden door nieuwere versies en kan hoogstwaarschijnlijk voor 
+  een lange periode worden gebruikt.
+
+Deze mappen bevatten JSON-schema's. Ze kunnen in uw eigen Objecttypen API worden
+ingeladen en voorzien worden van de juiste meta gegevens.
+
+
 References
 ==========
 
