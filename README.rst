@@ -1,0 +1,53 @@
+===========
+Objecttypes
+===========
+
+A collection of objecttypes, created and used by Dutch government organizations,
+for use with the `Objecttypes API`_.
+(`Nederlandse versie`_)
+
+Introduction
+============
+
+Objecttypes are technical definitions of an object. If every application can
+expect, create and use the same technical definition for an object, integration 
+between systems would be much easier. The use of objecttypes that everyone 
+agreed upon, allow for exactly this.
+
+An objecttype can describe anything: A monument, boat, road, tree, marriage 
+official, pension plan, form, etc. These technical definitions are described as 
+a `JSON schema`_ and the objecttype adds some meta information to offer context
+for this JSON schema.
+
+The `Objects API`_ and the `Objecttypes API`_ are two components that complement 
+eachother. The **Objecttypes API** holds the objecttypes for objects that can 
+be stored in the **Objects API**. Together they provide a powerfull way to 
+create and store any kind of object. They are designed in line with the 
+`Common Ground`_ philosophy and they can be used by other API's that need to 
+store domain specific data.
+
+The objecttypes in this repository (CC0), and also the Objecttypes API (EUPL)
+and the Objects API (EUPL) are open source and therefore free to use.
+
+.. _`JSON schema`: https://json-schema.org/
+.. _`Objects API`: https://github.com/maykinmedia/objects-api/
+.. _`Objecttypes API`: https://github.com/maykinmedia/objecttypes-api/
+.. _`Common Ground`: https://www.commonground.nl/
+
+
+References
+==========
+
+* `Documentation <https://objects-and-objecttypes-api.readthedocs.io/>`_
+* `Community <https://commonground.nl/groups/view/601c92bd-19c7-431a-acd5-0400d60ad666/overige-registraties-objecten-en-objecttypen-api>`_
+* `Objects API <https://github.com/maykinmedia/objects-api/>`_
+* `Objecttypes API <https://github.com/maykinmedia/objecttypes-api/>`_
+
+
+Licence
+=======
+
+Licensed under the `Creative Commons Zero (CC0) v1.0 Universal`_
+
+.. _`Nederlandse versie`: README.NL.rst
+.. _`Creative Commons Zero (CC0) v1.0 Universal`: LICENSE
