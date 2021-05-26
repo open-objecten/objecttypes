@@ -32,9 +32,31 @@ en de Objecten API (EUPL) zijn open source en daarmee vrij en gratis te
 gebruiken.
 
 .. _`JSON schema`: https://json-schema.org/
+.. _`Common Ground`: https://www.commonground.nl/
+
+
+Deelnemers in de community standaarden
+--------------------------------------
+
+De `Objecten API`_ en de `Objecttypen API`_ doorlopen op dit moment het 
+standaardisatieproces binnen `VNG`_. Ondertussen hebben een aantal publieke 
+organisaties aangegeven de API's al te (gaan) gebruiken en achter deze API's 
+te staan. Ze gebruiken objecttypen en zijn voornemens actief bij te dragen door 
+het toevoegen of verbeteren van objecttypen om deze vervolgens hier te delen.
+
+Een, waarschijnlijk onvolledige, lijst met deelnemers wordt hieronder getoond:
+
+* `Dimpact <https://www.dimpact.nl/>`_ (cooperation of 40+ municipalities)
+* `GBI <https://gbi-gemeenten.nl/>`_ (part of VNG)
+* Municipality of Utrecht
+* Municipality of Delft
+* Municipality of Amsterdam
+* Municipality of Rotterdam (also member of Dimpact)
+* Municipality of Haarlem
+
 .. _`Objecten API`: https://github.com/maykinmedia/objects-api/
 .. _`Objecttypen API`: https://github.com/maykinmedia/objecttypes-api/
-.. _`Common Ground`: https://www.commonground.nl/
+.. _`VNG`: https://www.vngrealisatie.nl/
 
 
 Hoe te gebruiken

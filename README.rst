@@ -30,9 +30,31 @@ The objecttypes in this repository (CC0), and also the Objecttypes API (EUPL)
 and the Objects API (EUPL) are open source and therefore free to use.
 
 .. _`JSON schema`: https://json-schema.org/
+.. _`Common Ground`: https://www.commonground.nl/
+
+
+Participants in the community standards
+---------------------------------------
+
+The `Objects API`_ and the `Objecttypes API`_ are in the process of 
+standardization within `VNG`_. Meanwhile, several public organizations have 
+indicated they will (plan to) use and support these API's. They intent to use 
+objecttypes and will actively contribute by providing new and/or improved 
+objecttypes and share them here.
+
+A, most likely incomplete, list of participants is shown below:
+
+* `Dimpact <https://www.dimpact.nl/>`_ (cooperation of 40+ municipalities)
+* `GBI <https://gbi-gemeenten.nl/>`_ (part of VNG)
+* Municipality of Utrecht
+* Municipality of Delft
+* Municipality of Amsterdam
+* Municipality of Rotterdam (also member of Dimpact)
+* Municipality of Haarlem
+
 .. _`Objects API`: https://github.com/maykinmedia/objects-api/
 .. _`Objecttypes API`: https://github.com/maykinmedia/objecttypes-api/
-.. _`Common Ground`: https://www.commonground.nl/
+.. _`VNG`: https://www.vngrealisatie.nl/
 
 
 How to use
