@@ -1,0 +1,96 @@
+{
+	"title": "ObjectType Taak",
+	"type": "object",
+	"examples": [
+		{
+			"bsn": "123456782",
+			"kvk": "82395551",
+			"verwerker_taak_id": "18af0b6a-967b-4f81-bb8e-a44988e0c2f0",
+			"formulier_id": "Formulier123",
+			"data": {
+				"voornaam": "Jan",
+				"achternaam": "Smit",
+				"geboortedatum": "01-01-1970",
+				"toestemming": true
+			},
+			"verzonden_data": {
+				"voornaam": "Jan",
+				"achternaam": "Smit",
+				"geboortedatum": "01-01-1971",
+				"toestemming": false
+			},
+			"status": "open"
+		}
+	],
+	"properties": {
+		"bsn": {
+			"type": "string",
+			"pattern": "^[0-9]+$"
+		},
+		"kvk": {
+			"type": "string",
+			"pattern": "^[0-9]+$"
+		},
+		"verwerker_taak_id": {
+			"type": "string",
+			"format": "uuid"
+		},
+		"formulier_id": {
+			"type": "string"
+		},
+		"data": {
+			"type": "object",
+			"patternProperties": {
+				"^.*$": {
+					"not": {
+						"type": "object"
+					}
+				}
+			},
+			"additionalProperties": false
+		},
+		"verzonden_data": {
+			"type": "object",
+			"patternProperties": {
+				"^.*$": {
+					"not": {
+						"type": "object"
+					}
+				}
+			},
+			"additionalProperties": false
+		},
+		"status": {
+			"type": "string",
+			"enum": [
+				"open",
+				"ingediend",
+				"verwerkt",
+				"gesloten"
+			]
+		}
+	},
+	"allOf": [
+		{
+			"anyOf": [
+				{
+					"required": [
+						"bsn"
+					]
+				},
+				{
+					"required": [
+						"kvk"
+					]
+				}
+			]
+		},
+		{
+			"required": [
+				"verwerker_taak_id",
+				"formulier_id",
+				"status"
+			]
+		}
+	]
+}
