@@ -263,6 +263,12 @@
         "omschrijving" : "Verhuizing Blaak 27",
         "toelichting" : "Nieuw huis gekocht"
       },
+
+      "geometry": {
+      "type": "Point", # GeometryCollection, LineString, MultiLineString, MultiPoint, MultiPolygon, Point, Polygon
+      "coordinates": [52.36673378967122, 4.893164274470299],
+      },
+      
       "betrokkenen" : [
         {
           "inpBsn" : "111222333",
