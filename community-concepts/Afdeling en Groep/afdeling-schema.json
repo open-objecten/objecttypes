@@ -1,0 +1,28 @@
+{
+	"type": "object",
+	"title": "Afdeling",
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"examples": [
+		{
+			"identificatie": "ondernemen-vergunn002",
+			"naam": "Ondernemen en Vergunningen"
+		}
+	],
+	"properties": {
+		"identificatie": {
+			"type": "string",
+			"title": "identificatie",
+			"description": "Een korte identificatie van de afdeling, maximaal 24 tekens.",
+			"maxLength": 24			
+		},
+		"naam": {
+			"type": "string",
+			"title": "Naam van de afdeling",
+			"description": "feitelijke naam van de afdeling"
+		}
+	},
+	"required": [
+		"identificatie",
+		"naam"
+	]
+}
