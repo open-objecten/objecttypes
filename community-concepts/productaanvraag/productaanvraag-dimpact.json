@@ -1,6 +1,6 @@
 {
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
   "$id" : "https://open-objecten.org/schemas/productaanvraag",
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title" : "Productaanvraag",
   "type" : "object",
   "properties" : {
@@ -27,7 +27,8 @@
         }
       },
       "required" : [
-        "naam"
+        "naam",
+        "kenmerk"
       ]
     },
     "type" : {
@@ -106,6 +107,38 @@
           "examples" : [
             "Nieuw huis gekocht"
           ]
+        },
+        "geometry": {
+          "title": "Geometry",
+          "description": "Zaaklocatie",
+          "type": "object",
+          "properties": {
+            "type": {
+              "title": "Type",
+              "description": "Geometry type",
+              "type": "string",
+              "enum": [
+                "Point"
+              ]
+            },
+            "coordinates": {
+              "title": "Coordinates",
+              "description": "Latitude en longitude in WGS 84 coordinatenstelsel",
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 2,
+              "maxItems": 2,
+              "examples": [
+                "[52.36673378967122, 4.893164274470299]"
+              ]
+            }
+          },
+          "required": [
+            "type",
+            "coordinates"
+          ]
         }
       }
     },
@@ -159,7 +192,10 @@
           "title" : "Transactie datum/tijd",
           "description" : "Tijdstip waarop de transactie met het betaalsysteem heeft plaatsgevonden",
           "type" : "string",
-          "format" : "date-time"
+          "format": "date-time",
+          "examples": [
+            "2022-03-15T22:15:30.123+01:00"
+          ]
         },
         "statusCode" : {
           "title" : "Status code",
@@ -242,7 +278,7 @@
     {
       "bron" : {
         "naam" : "Open Formulieren",
-        "kenmerk": "f56552a8-a082-4306-9111-eb1664fcb05d"
+        "kenmerk" : "f56552a8-a082-4306-9111-eb1664fcb05d"
       },
       "type" : "verhuizing",
       "aanvraaggegevens" : {
