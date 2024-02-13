@@ -59,8 +59,7 @@
 		},
 		{
 			"identificatie": "Rod956",
-			"voornaam": "Olivia",
-			"achternaam": "Rodriguez",
+			"volledigeNaam": "Olivia Rodriguez",
 			"telefoonnummers": [
 				{
 					"telefoonnummer": "11 4136 1065"
@@ -131,6 +130,11 @@
 			"type": "string",
 			"title": "Achternaam",
 			"description": "De achternaam van de medewerker"
+		},
+		"volledigeNaam": {
+			"type": "string",
+			"title": "Volledige naam",
+			"description": "De volledige naam van de medewerker"
 		},
 		"telefoonnummers": {
 			"type": "array",
@@ -350,8 +354,6 @@
 	},
 	"required": [
 		"identificatie",
-		"voornaam",
-		"achternaam",
 		"afdelingen"
 	]
 }

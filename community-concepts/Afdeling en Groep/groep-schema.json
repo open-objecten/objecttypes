@@ -30,7 +30,6 @@
 	},
 	"required": [
 		"identificatie",
-		"naam",
-		"afdelingId"
+		"naam"
 	]
 }
