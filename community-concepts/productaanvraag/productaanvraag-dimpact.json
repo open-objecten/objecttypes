@@ -322,7 +322,7 @@
         "bedrag" : 19.20,
         "status" : "niet_geslaagd",
         "transactieId" : "123456784",
-        "transactiedatumtijd" : "2021-04-25T21:30:05+00",
+        "transactiedatumtijd" : "2021-04-25T21:30:05.123+00:00",
         "statusCode" : "5",
         "melding" : "Saldo tekort"
       },
