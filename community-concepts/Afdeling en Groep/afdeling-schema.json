@@ -12,8 +12,7 @@
 		"identificatie": {
 			"type": "string",
 			"title": "identificatie",
-			"description": "Een korte identificatie van de afdeling, maximaal 24 tekens.",
-			"maxLength": 24			
+			"description": "De unieke identifier van de afdeling binnen de organisatie"
 		},
 		"naam": {
 			"type": "string",
