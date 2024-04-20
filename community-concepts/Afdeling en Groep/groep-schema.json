@@ -13,8 +13,7 @@
 		"identificatie": {
 			"type": "string",
 			"title": "identificatie",
-			"description": "Een korte identificatie van de groep, maximaal 24 tekens.",
-			"maxLength": 24
+			"description": "unieke identifier van de groep binnen de organisatie"
 		},
 		"naam": {
 			"type": "string",
