@@ -81,6 +81,11 @@
           "type": "string",
           "title": "identificatie",
           "description": "Een korte identificatie van de organisatorische eenheid, of medewerker, die de taak moet gaan uitvoeren."
+        },
+        "typeOrganisatorischeEenheid": {
+          "type": "string",
+          "title": "Type organisatorische eenheid",
+          "description": "Als actor is organisatorische eenheid: extra aanduiding van het type orgaisatorische eenheid, bv Afdeling of Groep. Toegevoegd t.b.v. ontwikkeling PodiumD Contact i.c.m. e-Suite, waar het verschil tussen Afdeling en Groep betekenisvol is."
         }
       }
     },
