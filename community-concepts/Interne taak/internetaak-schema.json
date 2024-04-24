@@ -48,7 +48,54 @@
         "identificatie": "string",
         "voorvoegselAchternaam": "string"
       }
-    }
+    },
+		{
+			"actor": {
+				"naam": "Vergunningen",
+				"soortActor": "organisatorische eenheid",
+				"identificatie": "vergu-012",
+				"typeOrganisatorischeEenheid":"afdeling"
+			},
+			"nummer": "2023-0002",
+			"status": "te verwerken",
+			"handeling": "Terugbellen",
+			"betrokkene": {
+				"rol": "klant",
+				"klant": "https://example.com",
+				"organisatie": "Sporthal Ons Genoegen",
+				"persoonsnaam": {
+					"voornaam": "Johannes",
+					"achternaam": "Dooper",
+					"voorvoegselAchternaam": "den"
+				},
+				"digitaleAdressen": [
+					{
+						"adres": "0611223344",
+						"omschrijving": "telefoonnummer",
+						"soortDigitaalAdres": "telefoonnummer"
+					},
+					{
+						"adres": "020 6383068",
+						"omschrijving": "werknummer",
+						"soortDigitaalAdres": "telefoonnummer"
+					},
+					{
+						"adres": "joop@domein.nl",
+						"omschrijving": "e-mmailadres",
+						"soortDigitaalAdres": "e-mailadres"
+					}
+				]
+			},
+			"toelichting": "Graag terubellen in de middaguren, over de zaak",
+			"contactmoment": "https://example.com/contactmomenten/api/v1/contactmomenten/2146569b-8100-4944-a12e-fd262bf7389d",
+			"registratiedatum": "2023-07-28T14:15:22Z",
+			"medewerkerIdentificatie": {
+				"achternaam": "string",
+				"voorletters": "string",
+				"identificatie": "string",
+				"voorvoegselAchternaam": "string"
+			}
+		}
   ],
   "required": [
     "contactmoment",
@@ -83,6 +130,10 @@
           "description": "Een korte identificatie van de organisatorische eenheid, of medewerker, die de taak moet gaan uitvoeren."
         },
         "typeOrganisatorischeEenheid": {
+           "enum": [
+            "afdeling",
+            "groep"
+          ],
           "type": "string",
           "title": "Type organisatorische eenheid",
           "description": "Als actor is organisatorische eenheid: extra aanduiding van het type orgaisatorische eenheid, bv Afdeling of Groep. Toegevoegd t.b.v. ontwikkeling PodiumD Contact i.c.m. e-Suite, waar het verschil tussen Afdeling en Groep betekenisvol is."
