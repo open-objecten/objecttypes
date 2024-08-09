@@ -302,19 +302,19 @@
       "betrokkenen" : [
         {
           "inpBsn" : "111222333",
-          "rolOmschrijvingGeneriek" : "initiator",
+          "roltypeOmschrijving" : "initiator",
           "indicatieMachtiging" : "gemachtigde",
           "indicatieCorrespondentie" : true
         },
         {
           "inpBsn" : "222333444",
-          "rolOmschrijvingGeneriek" : "mede_initiator",
+          "roltypeOmschrijving" : "mede_initiator",
           "indicatieMachtiging" : "machtiginggever",
           "indicatieCorrespondentie" : false
         },
         {
           "medewerkerIdentificatie" : "MDW123",
-          "rolOmschrijvingGeneriek" : "klantcontacter"
+          "roltypeOmschrijving" : "klantcontacter"
         }
       ],
       "betaling" : {
@@ -373,20 +373,10 @@
           "type" : "string",
           "maxLength" : 24
         },
-        "rolOmschrijvingGeneriek" : {
-          "title" : "Rol omschrijving generiek",
-          "description" : "Algemeen gehanteerde benaming van de aard van de rol van de betrokkene",
-          "type" : "string",
-          "enum" : [
-            "adviseur",
-            "behandelaar",
-            "belanghebbende",
-            "beslisser",
-            "initiator",
-            "klantcontacter",
-            "zaakcoordinator",
-            "mede_initiator"
-          ]
+        "roltypeOmschrijving" : {
+          "title" : "Roltype omschrijving",
+          "description" : "Omschrijving van de aard van de rol van de betrokkene",
+          "type" : "string"
         },
         "indicatieMachtiging" : {
           "title" : "Indicatie machtiging",
@@ -407,31 +397,31 @@
         {
           "required" : [
             "inpBsn",
-            "rolOmschrijvingGeneriek"
+            "roltypeOmschrijving"
           ]
         },
         {
           "required" : [
             "innNnpId",
-            "rolOmschrijvingGeneriek"
+            "roltypeOmschrijving"
           ]
         },
         {
           "required" : [
             "vestigingsNummer",
-            "rolOmschrijvingGeneriek"
+            "roltypeOmschrijving"
           ]
         },
         {
           "required" : [
             "organisatorischeEenheidIdentificatie",
-            "rolOmschrijvingGeneriek"
+            "roltypeOmschrijving"
           ]
         },
         {
           "required" : [
             "medewerkerIdentificatie",
-            "rolOmschrijvingGeneriek"
+            "roltypeOmschrijving"
           ]
         }
       ]
