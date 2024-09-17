@@ -302,19 +302,19 @@
       "betrokkenen" : [
         {
           "inpBsn" : "111222333",
-          "roltypeOmschrijving" : "initiator",
+          "rolOmschrijvingGeneriek" : "initiator",
           "indicatieMachtiging" : "gemachtigde",
           "indicatieCorrespondentie" : true
         },
         {
           "inpBsn" : "222333444",
-          "roltypeOmschrijving" : "mede_initiator",
+          "rolOmschrijvingGeneriek" : "mede_initiator",
           "indicatieMachtiging" : "machtiginggever",
           "indicatieCorrespondentie" : false
         },
         {
           "medewerkerIdentificatie" : "MDW123",
-          "roltypeOmschrijving" : "klantcontacter"
+          "rolOmschrijvingGeneriek" : "klantcontacter"
         }
       ],
       "betaling" : {
@@ -373,6 +373,21 @@
           "type" : "string",
           "maxLength" : 24
         },
+        "rolOmschrijvingGeneriek" : {
+          "title" : "Rol omschrijving generiek",
+          "description" : "Algemeen gehanteerde benaming van de aard van de rol van de betrokkene",
+          "type" : "string",
+          "enum" : [
+            "adviseur",
+            "behandelaar",
+            "belanghebbende",
+            "beslisser",
+            "initiator",
+            "klantcontacter",
+            "zaakcoordinator",
+            "mede_initiator"
+          ]
+        },
         "roltypeOmschrijving" : {
           "title" : "Roltype omschrijving",
           "description" : "Omschrijving van de aard van de rol van de betrokkene",
@@ -397,7 +412,19 @@
         {
           "required" : [
             "inpBsn",
+            "rolOmschrijvingGeneriek"
+          ]
+        },
+        {
+          "required" : [
+            "inpBsn",
             "roltypeOmschrijving"
+          ]
+        },
+        {
+          "required" : [
+            "innNnpId",
+            "rolOmschrijvingGeneriek"
           ]
         },
         {
@@ -409,13 +436,31 @@
         {
           "required" : [
             "vestigingsNummer",
+            "rolOmschrijvingGeneriek"
+          ]
+        },
+        {
+          "required" : [
+            "vestigingsNummer",
             "roltypeOmschrijving"
           ]
         },
         {
           "required" : [
             "organisatorischeEenheidIdentificatie",
+            "rolOmschrijvingGeneriek"
+          ]
+        },
+        {
+          "required" : [
+            "organisatorischeEenheidIdentificatie",
             "roltypeOmschrijving"
+          ]
+        },
+        {
+          "required" : [
+            "medewerkerIdentificatie",
+            "rolOmschrijvingGeneriek"
           ]
         },
         {
