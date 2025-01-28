@@ -5,7 +5,8 @@
 	"examples": [
 		{
 			"identificatie": "ondernemen-vergunn002",
-			"naam": "Ondernemen en Vergunningen"
+			"naam": "Ondernemen en Vergunningen",
+			"email": "ondernemen-vergunn002@demodam.nl"
 		}
 	],
 	"properties": {
@@ -18,6 +19,12 @@
 			"type": "string",
 			"title": "Naam van de afdeling",
 			"description": "feitelijke naam van de afdeling"
+		},
+		"email": {
+			"type": "string",
+			"title": "E-mailadres",
+			"format": "email",
+			"description": "E-mailadres van de afdeling"
 		}
 	},
 	"required": [
