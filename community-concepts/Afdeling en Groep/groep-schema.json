@@ -13,8 +13,7 @@
 		"identificatie": {
 			"type": "string",
 			"title": "identificatie",
-			"description": "Een korte identificatie van de groep, maximaal 24 tekens.",
-			"maxLength": 24
+			"description": "Een korte identificatie van de groep"
 		},
 		"naam": {
 			"type": "string",
@@ -24,8 +23,7 @@
 		"afdelingId": {
 			"type": "string",
 			"title": "ID van de bovenliggende afdeling.",
-			"description": "ID van de afdeling waar de groep onder valt.",
-			"format": "uuid"
+			"description": "ID van de afdeling waar de groep onder valt."
 		}
 	},
 	"required": [
