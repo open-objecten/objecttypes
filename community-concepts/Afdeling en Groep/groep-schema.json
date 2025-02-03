@@ -6,7 +6,8 @@
 		{
 			"identificatie": "ond-verg-wabo",
 			"naam": "Ondernemen en Vergunningen Wabo",
-			"afdelingId": "12bed5b2-b403-4dc1-96da-1ee9c7a526df"
+			"afdelingId": "12bed5b2-b403-4dc1-96da-1ee9c7a526df",
+			"email": "ond-verg-wabo@demodam.nl"
 		}
 	],
 	"properties": {
@@ -24,6 +25,12 @@
 			"type": "string",
 			"title": "ID van de bovenliggende afdeling.",
 			"description": "ID van de afdeling waar de groep onder valt."
+		},
+		"email": {
+			"type": "string",
+			"title": "E-mailadres",
+			"format": "email",
+			"description": "E-mailadres van de groep"
 		}
 	},
 	"required": [
