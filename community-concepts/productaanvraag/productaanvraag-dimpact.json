@@ -361,6 +361,12 @@
           "type" : "string",
           "maxLength" : 24
         },
+        "kvkNummer" : {
+          "title" : "KVK nummer",
+          "description" : "Unieke identificatie van de onderneming bij de Kamer van Koophandel (KVK).",
+          "type" : "string",
+          "maxLength" : 8
+        },
         "organisatorischeEenheidIdentificatie" : {
           "title" : "Organisatorische eenheid identificatie",
           "description" : "Korte identificatie van de organisatorische eenheid",
@@ -436,12 +442,14 @@
         {
           "required" : [
             "vestigingsNummer",
+            "kvkNummer",
             "rolOmschrijvingGeneriek"
           ]
         },
         {
           "required" : [
             "vestigingsNummer",
+            "kvkNummer",
             "roltypeOmschrijving"
           ]
         },
