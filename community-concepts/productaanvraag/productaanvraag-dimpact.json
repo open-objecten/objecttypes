@@ -441,14 +441,12 @@
         },
         {
           "required" : [
-            "vestigingsNummer",
             "kvkNummer",
             "rolOmschrijvingGeneriek"
           ]
         },
         {
           "required" : [
-            "vestigingsNummer",
             "kvkNummer",
             "roltypeOmschrijving"
           ]
