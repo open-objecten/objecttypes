@@ -457,6 +457,18 @@
         },
         {
           "required" : [
+            "vestigingsNummer",
+            "rolOmschrijvingGeneriek"
+          ]
+        },
+        {
+          "required" : [
+            "vestigingsNummer",
+            "roltypeOmschrijving"
+          ]
+        },
+        {
+          "required" : [
             "organisatorischeEenheidIdentificatie",
             "rolOmschrijvingGeneriek"
           ]
