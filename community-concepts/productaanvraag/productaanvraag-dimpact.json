@@ -447,24 +447,18 @@
           "required" : [
             "kvkNummer",
             "rolOmschrijvingGeneriek"
+          ],
+          "optional": [
+            "vestigingsNummer"
           ]
         },
         {
           "required" : [
             "kvkNummer",
             "roltypeOmschrijving"
-          ]
-        },
-        {
-          "required" : [
-            "vestigingsNummer",
-            "rolOmschrijvingGeneriek"
-          ]
-        },
-        {
-          "required" : [
-            "vestigingsNummer",
-            "roltypeOmschrijving"
+          ],
+          "optional": [
+            "vestigingsNummer"
           ]
         },
         {
