@@ -2,6 +2,34 @@
 	"type": "object",
 	"title": "SDG Kennisartikel",
 	"$schema": "http://json-schema.org/draft-07/schema#",
+	"examples": [
+		{
+			"url":"https://example.com/org/123",
+			"uuid":"00000000-0000-0000-0000-000000000000",
+			"upnUri":"unknown",
+			"locaties":null,
+			"doelgroep":"eu-burger",
+			"vertalingen":[
+				{
+					"taal":"nl",
+					"titel":"Veteranen",
+					"tekst":"<h2>Bomen kappen/h2>\n<p>Wil u een boom kappen?</p>",
+					"deskMemo":"Interne informatie, alleen bestemd voor de Balie- of KCC-medewerker.",
+					"datumWijziging":"2026-05-13T15:38:30+02:00"
+				}
+			],
+			"productAanwezig":true,
+			"publicatieDatum":"2026-05-13",
+			"beschikbareTalen":["nl"],
+			"productValtOnder":null,
+			"verantwoordelijkeOrganisatie": 
+			{
+				"url":"https://example.com",
+				"owmsEndDate":"2026-12-31T23:38:30+00:00",
+				"owmsIdentifier":"https://example.com/org/123"
+			}
+		}
+	],
 	"required": [
 		"url",
 		"uuid",
